@@ -71,7 +71,7 @@ public class TP12BaseDeDatos {
                JOptionPane.showMessageDialog(null, "Error SQL");
            }
         }*/
-        try {
+        /*try {
                 // Cargar el Driver de conexión
             Class.forName("org.mariadb.jdbc.Driver");
             // Establecer la conexión a la base de datos
@@ -79,7 +79,7 @@ public class TP12BaseDeDatos {
             String usuario = "root";
             String password = "";
             Connection con=DriverManager.getConnection(URL,usuario,password);
-            //Agregar una herramienta
+            //Consultar el estado de las herramientas con stock mayor a 10 e informacion de si estan activas y en prestamos
                       String consultaSQL = "SELECT h.nombre AS nombre_herramienta, h.descripcion, h.stock, h.estado, " +
                 "m.idEmpleado, e.nombre AS nombre_empleado, e.apellido, m.fechap, m.fechad " +
                 "FROM herramienta h " +
@@ -126,7 +126,7 @@ public class TP12BaseDeDatos {
            } else{
                JOptionPane.showMessageDialog(null, "Error SQL");
            }
-        }
+        }*/
                /*try {
                 // Cargar el Driver de conexión
             Class.forName("org.mariadb.jdbc.Driver");
