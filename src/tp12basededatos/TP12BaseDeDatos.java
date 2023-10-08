@@ -80,7 +80,7 @@ public class TP12BaseDeDatos {
             String password = "";
             Connection con=DriverManager.getConnection(URL,usuario,password);
             //Consultar el estado de las herramientas con stock mayor a 10 e informacion de si estan activas y en prestamos
-                      String consultaSQL = "SELECT h.nombre AS nombre_herramienta, h.descripcion, h.stock, h.estado, " +
+                String consultaSQL = "SELECT h.nombre AS nombre_herramienta, h.descripcion, h.stock, h.estado, " +
                 "m.idEmpleado, e.nombre AS nombre_empleado, e.apellido, m.fechap, m.fechad " +
                 "FROM herramienta h " +
                 "LEFT JOIN movimiento m ON h.idHerramienta = m.idHerramienta " +
